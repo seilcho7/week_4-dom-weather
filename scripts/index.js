@@ -46,3 +46,25 @@ const atlWeather ={
 // city name
 // temperature
 // wind speed
+
+const body = document.querySelector('body');
+const aDiv = document.createElement('div');
+
+body.append(aDiv);
+
+const weatherInfo = [
+   `City Name: ${atlWeather.name}`,
+   `Temperature: ${atlWeather.main.temp}`,
+   `Wind Speed: ${atlWeather.wind.speed}`,
+]
+
+weatherInfo.forEach(function (array) {
+   const aPara = document.createElement('p');
+   aPara.textContent = array;
+   aDiv.append(aPara);
+});
+
+// Bonus #1: Showing an icon
+// Write a function that accepts the entire weather object, extracts the icon information, and returns the URL for the icon.
+// Then, write a function that accepts a URL, creates DOM elements to show the image, and appends it to the page.
+
