@@ -1,7 +1,7 @@
 const atlWeather ={  
     "coord":{  
-       "lon":-84.39,
-       "lat":33.75
+       "lon":-84.373,
+       "lat":33.848,
     },
     "weather":[  
        {  
@@ -89,7 +89,7 @@ function mapElement(obj) {
    iframe.setAttribute('height', '270');
    iframe.setAttribute('frameborder', '0');
    iframe.setAttribute('style', 'border:0');
-   iframe.setAttribute('src', `http://maps.google.com/maps?q=${obj.coord.lon}, ${obj.coord.lat}&z=15&output=embed`);
+   iframe.setAttribute('src', `http://maps.google.com/maps?q=${obj.coord.lat}, ${obj.coord.lon}&z=15&output=embed`);
    return aDiv.prepend(iframe);
 }
 
